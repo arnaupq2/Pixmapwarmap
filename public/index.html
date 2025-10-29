@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Frentes</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+  <style>
+    html, body { margin:0; padding:0; height:100%; overflow:hidden; font-family:Arial, sans-serif; }
+    #map { height:100%; width:100%; }
+
+    #topBar {
+      position:absolute;
+      top:0; left:0; right:0;
+      height:70px;
+      background:#fff;
+      border-bottom:2px solid #ccc;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:1001;
+    }
+    #topBar img#logo {
+      height:60px;
+      margin:0 20px;
+    }
+    #telegramIcon {
+      position:absolute;
+      right:15px;
+      top:10px;
+      width:45px;
+      height:45px;
+      cursor:pointer;
+    }
+
+    #controls {
+      position:absolute;
+      top:80px;
+      left:10px;
+      background:white;
+      padding:10px;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.2);
+      z-index:1001;
+    }
+    #imagePanel img {
+      width:40px;
+      height:40px;
+      margin:5px;
+      cursor:pointer;
+    }
+
+    #status {
+      position:absolute;
+      bottom:15px;
+      left:50%;
+      transform:translateX(-50%);
+      background:rgba(255,255,255,0.9);
+      padding:6px 14px;
+      border-radius:8px;
+      display:none;
+      z-index:1002;
+    }
+
+    #newsContainer {
+      position:absolute;
+      right:10px;
+      bottom:10px;
+      width:250px;
+      max-height:300px;
+      overflow-y:auto;
+      background:white;
+      padding:10px;
+      border-radius:8px;
+      z-index:1001;
+    }
+    .newsItem {
+      border-bottom:1px solid #ccc;
+      padding-bottom:6px;
+      margin-bottom:6px;
+    }
+    .newsItem img { width:100%; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div id="topBar">
+    <img id="logo" src="recursos/logo.png" alt="Logo">
+    <img id="telegramIcon" src="recursos/telegram.png" alt="Telegram" onclick="window.open('https://t.me/DEzeitung','_blank')">
+  </div>
+
+  <div id="controls">
+    <button id="btnShowImages">🪖 Imágenes</button>
+    <button id="btnDeleteMarker">🗑️ Eliminar</button>
+    <br><br>
+    <button id="btnAddNews">📰 Añadir noticia</button><br>
+    <input type="file" id="newsImage" accept="image/*" style="display:none">
+    <textarea id="newsText" placeholder="Texto noticia" rows="2" cols="20"></textarea>
+    <div id="imagePanel" style="display:none"></div>
+  </div>
+
+  <div id="newsContainer"></div>
+  <div id="status"></div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
