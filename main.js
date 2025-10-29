@@ -27,7 +27,7 @@ async function loadMap(){
   }catch(e){console.error(e);}
 }
 
-// --- Noticias ---
+// --- Cargar noticias ---
 let noticias = [];
 async function loadNews(){
   try{
