@@ -470,6 +470,7 @@
             [
               29.347229003906254,
               51.146617353835545
+<<<<<<< HEAD
             ],
             [
               29.347229003906254,
@@ -478,6 +479,8 @@
             [
               29.347229003906254,
               51.146617353835516
+=======
+>>>>>>> ba8e525 (trying some things)
             ]
           ]
         ]
@@ -2638,8 +2641,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           26.737976074218754,
           50.719069112580804
+=======
+          26.455078125000004,
+          50.035973672195496
+>>>>>>> ba8e525 (trying some things)
         ]
       },
       "properties": {
@@ -2761,6 +2769,21 @@
       },
       "properties": {
         "tipo": "enemigo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.552978515625004,
+          50.48547354578499
+        ]
+      },
+      "properties": {
+        "image": "recursos/ukrainecapital.png",
+        "name": "Kiev",
+        "angle": 10
       }
     }
   ]
