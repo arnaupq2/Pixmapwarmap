@@ -12,7 +12,7 @@ async function loadMap(){
   try{
     const res = await fetch('frentes.json');
     const data = await res.json();
-    drawnItems.clearLayers(); tropasLayer.clearLayers();
+    drawnItems.clearLayers(); tropasLayer.clearLayers();https://arnaupq2.github.io/Pixmapwarmap/
     (data.features||[]).forEach(f=>{
       if(f.geometry.type==='Polygon'){
         const coords = f.geometry.coordinates[0].map(c=>[c[1],c[0]]);
