@@ -6,30 +6,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
-html, body { height: 100%; margin: 0; font-family: sans-serif; background:#000000; }
+html, body { height: 100%; margin: 0; font-family: sans-serif; background:#000; }
 #map { position: absolute; top:0; left:0; right:0; bottom:0; z-index:0; }
 
+/* --- Top bar --- */
 #topbar {
   position: absolute; top:0; left:0; right:0; height:60px;
-  background:rgba(255, 255, 255, 0.7); display:flex; justify-content:center; align-items:center;
-  z-index:9999; box-shadow:0 2px 5px rgba(0,0,0,0.5);
+  background:rgba(255,255,255,0.95);
+  display:flex; justify-content:center; align-items:center;
+  z-index:9999;
+  box-shadow:0 2px 5px rgba(0,0,0,0.5);
 }
-#topbar img { height:40px; margin:0 10px; cursor:pointer; }
+#topbar img { height:40px; margin:0 10px; cursor:pointer; filter: invert(0); }
 #topbar .telegram { position:absolute; right:10px; cursor:pointer; }
 
+/* --- Sidebar de noticias --- */
 #sidebar {
   position: absolute; top:60px; right:0; width:300px; bottom:0; overflow-y:auto;
-  background:rgba(0,0,0,0.7); padding:10px; box-shadow:-2px 0 5px rgba(0,0,0,0.5); z-index:9999;
-  color:rgb(255, 255, 255);
+  background:rgba(0,0,0,0.7); padding:10px;
+  box-shadow:-2px 0 5px rgba(0,0,0,0.5); z-index:9999;
+  color:white;
   border-radius:10px 0 0 10px;
 }
 
-/* Estilo tipo "event-item" como tarjeta */
 .event-item { 
   margin-bottom:12px; 
   border-radius:10px; 
   padding:10px; 
-  background:rgba(0, 0, 0, 0.8); 
+  background:rgba(30,30,30,0.8); 
   box-shadow:0 2px 5px rgba(0,0,0,0.5);
   cursor:pointer; 
 }
@@ -40,6 +44,7 @@ html, body { height: 100%; margin: 0; font-family: sans-serif; background:#00000
 .event-title { margin:4px 0; font-size:14px; font-weight:bold; color:white; }
 .event-description { font-size:12px; margin:2px 0; color:#ddd; }
 
+/* --- Botón para mostrar barra de noticias --- */
 #showSidebarBtn {
   display: none;
   position: absolute;
@@ -50,8 +55,8 @@ html, body { height: 100%; margin: 0; font-family: sans-serif; background:#00000
   height: 50px;
   border-radius: 50%;
   border: none;
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0);
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   cursor: pointer;
   padding: 5px;
 }
@@ -84,32 +89,32 @@ html, body { height: 100%; margin: 0; font-family: sans-serif; background:#00000
 <script src="https://rawcdn.githack.com/bbecquet/Leaflet.RotatedMarker/master/leaflet.rotatedMarker.js"></script>
 
 <script>
-// ======= MAPA Y FRENTES =======
+// ======= MAPA =======
 const map = L.map('map').setView([48.5, 32], 5);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
 
 const frentesLayer = new L.LayerGroup().addTo(map);
 const tropasLayer = new L.LayerGroup().addTo(map);
 
-const iconMap = {
-  'ataque': 'recursos/ataque.png',
-  'anuncio': 'recursos/anuncio.png',
-  'ukrainecapital': 'recursos/ukrainecapital.png'
-};
-
+// ======= FUNCIONES =======
 function resolveIconUrl(props) {
   if (props.image) return props.image;
-  if (props.tipo) {
-    const key = String(props.tipo).toLowerCase().replace(/\.[a-z]+$/i,'');
-    return iconMap[key] || `recursos/${key}.png`;
-  }
-  if (props.name) {
-    const key = String(props.name).toLowerCase().replace(/\s+/g,'').replace(/\.[a-z]+$/i,'');
-    return iconMap[key] || null;
+
+  const basePath = 'recursos/';
+  const posiblesNombres = [];
+
+  if (props.tipo) posiblesNombres.push(String(props.tipo).toLowerCase());
+  if (props.name) posiblesNombres.push(String(props.name).toLowerCase());
+  if (props.icon) posiblesNombres.push(String(props.icon).toLowerCase());
+
+  for (let name of posiblesNombres) {
+    const posibles = ['png','jpg','jpeg','webp','gif'];
+    for (let ext of posibles) return basePath + name + '.' + ext;
   }
   return null;
 }
 
+// ======= CARGAR FRENTES =======
 async function loadFrentes() {
   try {
     const res = await fetch('frentes.json');
@@ -119,39 +124,44 @@ async function loadFrentes() {
     tropasLayer.clearLayers();
 
     const features = data.features || data;
-    (features || []).forEach(f => {
+    features.forEach(f => {
       if (!f.geometry) return;
+      const props = f.properties || {};
+
       if (f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon') {
-        const coordsToLatLngs = coords => coords[0].map(c => [c[1],c[0]]);
-        let latlngs = f.geometry.type==='Polygon' ? coordsToLatLngs(f.geometry.coordinates) : coordsToLatLngs(f.geometry.coordinates[0]);
-        const poly = L.polygon(latlngs,{
-          color: f.properties?.color||'#ff0000',
-          fillOpacity: f.properties?.fillOpacity||0.4,
-          weight: f.properties?.weight||2
+        const coords = f.geometry.coordinates[0].map(c => [c[1], c[0]]);
+        const poly = L.polygon(coords, {
+          color: props.color || '#ff0000',
+          fillOpacity: props.fillOpacity || 0.4,
+          weight: props.weight || 2
         });
-        if(f.properties?.name) poly.bindPopup(`<b>${f.properties.name}</b>`);
-        poly.on('mouseover', ()=>poly.setStyle({fillOpacity:0.6}));
-        poly.on('mouseout', ()=>poly.setStyle({fillOpacity:f.properties?.fillOpacity||0.4}));
+        if (props.name) poly.bindPopup(`<b>${props.name}</b>`);
         frentesLayer.addLayer(poly);
-      } else if(f.geometry.type==='Point') {
-        const props=f.properties||{};
-        const iconUrl=resolveIconUrl(props);
-        const lat=f.geometry.coordinates[1];
-        const lng=f.geometry.coordinates[0];
+      }
+
+      if (f.geometry.type === 'Point') {
+        const lat = f.geometry.coordinates[1];
+        const lng = f.geometry.coordinates[0];
+        const iconUrl = resolveIconUrl(props);
         let marker;
-        if(iconUrl){
-          const icon=L.icon({iconUrl, iconSize: props.iconSize||[32,32], iconAnchor: props.iconAnchor||[16,16]});
-          marker=L.marker([lat,lng],{icon,rotationAngle: props.angle||props.angulo||0});
+        if (iconUrl) {
+          const icon = L.icon({
+            iconUrl,
+            iconSize: props.iconSize || [32, 32],
+            iconAnchor: props.iconAnchor || [16, 16]
+          });
+          marker = L.marker([lat, lng], { icon, rotationAngle: props.angle || 0 });
         } else {
-          marker=L.marker([lat,lng]);
+          marker = L.marker([lat, lng]);
         }
-        if(props.name) marker.bindPopup(`<b>${props.name}</b>`);
+        if (props.name) marker.bindPopup(`<b>${props.name}</b>`);
         tropasLayer.addLayer(marker);
       }
     });
-  } catch(err){ console.error('Error cargando frentes.json',err); }
+  } catch (err) {
+    console.error('Error cargando frentes.json', err);
+  }
 }
-
 loadFrentes();
 
 // ======= NOTICIAS =======
@@ -170,53 +180,31 @@ showSidebarBtn.addEventListener('click', () => {
 });
 
 async function loadNews() {
-  try{
+  try {
     const res = await fetch('noticias.json');
     const noticias = await res.json();
-
-    newsContainer.innerHTML='';
-
-    // Ejemplo fijo
-    const ejemploDiv = document.createElement('div');
-    ejemploDiv.className='event-item';
-    ejemploDiv.innerHTML=`
-      <div class="event-header">
-        <div class="event-marker-dot" style="background:hsl(0,70%,55%)"></div>
-        <div class="event-content">
-          <div class="event-meta">
-            <span class="badge">Information of the site</span>
-            <span class="time"></span>
-          </div>
-          <h3 class="event-title">How to publish here?</h3>
-          <p class="event-description">If you want to publish here, you must publish real news about the game, so you need to have the role of Journalist in Pixmap.fun discord server, then you need to send a message to Arnold in Telegram with the information and the source.</p>
-        </div>
-      </div>
-    `;
-    newsContainer.appendChild(ejemploDiv);
-
-    // Noticias desde JSON
-    noticias.forEach(n=>{
-      const div=document.createElement('div');
-      div.className='event-item';
-      div.innerHTML=`
+    newsContainer.innerHTML = '';
+    noticias.forEach(n => {
+      const div = document.createElement('div');
+      div.className = 'event-item';
+      div.innerHTML = `
         <div class="event-header">
           <div class="event-marker-dot" style="background:hsl(200,70%,55%)"></div>
           <div class="event-content">
             <div class="event-meta">
-              <span class="badge">${n.tipo||'Info'}</span>
-              <span class="time">${n.time||''}</span>
+              <span class="badge">${n.tipo || 'Info'}</span>
+              <span class="time">${n.time || 'Just now'}</span>
             </div>
-            <h3 class="event-title">${n.text||''}</h3>
-            <p class="event-description">${n.description||''}</p>
+            <h3 class="event-title">${n.text || ''}</h3>
+            <p class="event-description">${n.description || ''}</p>
           </div>
-        </div>
-      `;
+        </div>`;
       newsContainer.appendChild(div);
     });
-
-  } catch(err){ console.error('Error cargando noticias.json',err);}
+  } catch (err) {
+    console.error('Error cargando noticias.json', err);
+  }
 }
-
 loadNews();
 </script>
 </body>

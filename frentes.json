@@ -3550,6 +3550,22 @@
         "angle": 0,
         "noticia": ""
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.21093750000001,
+          50.05713877598692
+        ]
+      },
+      "properties": {
+        "image": "recursos/kharkov.png",
+        "name": "Capital of Ukraine: Kharkiv(Харків)))",
+        "angle": 0,
+        "noticia": ""
+      }
     }
   ]
 }
