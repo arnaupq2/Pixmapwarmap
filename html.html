@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegación de ejemplo</title>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .site-nav {
+            display: flex;
+            flex-direction: column;
+            width: 60px;
+            background-color: #222;
+            height: 100vh;
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
+
+        .nav-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .nav-separator {
+            height: 1px;
+            width: 40px;
+            background-color: #555;
+            margin: 10px auto;
+        }
+
+        .site-nav-btn {
+            background: none;
+            border: none;
+            color: white;
+            margin: 10px 0;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .site-nav-btn:hover {
+            color: #00bcd4;
+        }
+
+        .language-flag img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+
+        /* Tooltip básico */
+        .site-nav-btn[data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            left: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: white;
+            padding: 5px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+            font-size: 12px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="site-nav">
+    <div class="nav-section">
+        <button class="site-nav-btn" data-site-nav="drawer">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        <button class="site-nav-btn" data-site-nav="language">
+            <div class="language-flag">
+                <img class="flag" src="/images/flags/gb.svg" alt="en">
+            </div>
+        </button>
+        <button class="site-nav-btn" data-site-nav="updates" data-tooltip="features.updates">
+            <span class="material-symbols-outlined">notifications</span>
+        </button>
+        <button class="site-nav-btn" data-site-nav="info" data-tooltip="features.info">
+            <span class="material-symbols-outlined">info</span>
+        </button>
+    </div>
+    <div class="nav-separator"></div>
+    <div class="nav-section">
+        <button class="site-nav-btn" data-site-nav="draw" data-tooltip="features.drawing" data-tooltip-placement="right">
+            <span class="material-symbols-outlined">draw</span>
+        </button>
+    </div>
+    <div class="nav-separator"></div>
+    <div class="nav-section">
+        <!-- Aquí puedes agregar más botones si quieres -->
+    </div>
+</nav>
+
+</body>
+</html>
