@@ -3566,6 +3566,22 @@
         "angle": 0,
         "noticia": ""
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.723266601562504,
+          46.521075663842865
+        ]
+      },
+      "properties": {
+        "image": "recursos/odesa.png",
+        "name": "Odesa(Одеса): The city where borned arqmt))",
+        "angle": 0,
+        "noticia": ""
+      }
     }
   ]
 }
