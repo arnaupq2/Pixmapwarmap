@@ -3460,22 +3460,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.531005859375004,
-          50.275298611425185
-        ]
-      },
-      "properties": {
-        "image": "recursos/anuncio.png",
-        "name": "They are shameful (ukrpb), they are idiots and they use bots. \"вантуз: Parlamentarian of Ukrcanv\"",
-        "angle": 0,
-        "noticia": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           22.71697998046875,
           48.44275344890319
         ]
@@ -3579,6 +3563,22 @@
       "properties": {
         "image": "recursos/odesa.png",
         "name": "Odesa(Одеса): The city where borned arqmt))",
+        "angle": 0,
+        "noticia": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.008605957031254,
+          52.24125614966341
+        ]
+      },
+      "properties": {
+        "image": "recursos/anuncio.png",
+        "name": "Poland is preparing to invade Lviv (Львів, Ukraine) tomorrow starting at 8:00 PM, with 186 soldiers. Source: Discord",
         "angle": 0,
         "noticia": ""
       }
