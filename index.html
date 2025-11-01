@@ -20,6 +20,14 @@ html, body { height: 100%; margin: 0; font-family: sans-serif; background:#000; 
 #topbar img { height:40px; margin:0 10px; cursor:pointer; filter: invert(0); }
 #topbar .telegram { position:absolute; right:10px; cursor:pointer; }
 
+/* Texto "Hola" junto al logo */
+#greeting {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 10px;
+}
+
 /* --- Sidebar de noticias --- */
 #sidebar {
   position: absolute; top:60px; right:0; width:300px; bottom:0; overflow-y:auto;
@@ -73,6 +81,7 @@ html, body { height: 100%; margin: 0; font-family: sans-serif; background:#000; 
 
 <div id="topbar">
   <img src="recursos/logo.png" alt="Logo">
+  <span id="greeting">#FreeChristianityinPixmap </span>
   <img src="recursos/telegram.png" class="telegram" alt="Telegram" onclick="window.open('https://t.me/DEzeitung','_blank')">
 </div>
 
@@ -209,3 +218,4 @@ loadNews();
 </script>
 </body>
 </html>
+
