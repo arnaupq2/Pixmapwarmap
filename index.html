@@ -81,7 +81,9 @@ html, body { height: 100%; margin: 0; font-family: sans-serif; background:#000; 
 
 <div id="topbar">
   <img src="recursos/logo.png" alt="Logo">
+  <img src="recursos/pixmap.png" alt="Pixmap" style="height:40px; margin:0 10px; cursor:pointer; filter:invert(0);">
   <span id="greeting"> </span> 
+  <img src="recursos/discord.png" class="discord" alt="Discord" onclick="window.open('https://discord.gg/pixmap','_blank')" style="position:absolute; right:60px; cursor:pointer;">
   <img src="recursos/telegram.png" class="telegram" alt="Telegram" onclick="window.open('https://t.me/DEzeitung','_blank')">
 </div>
 
@@ -216,6 +218,128 @@ async function loadNews() {
 }
 loadNews();
 </script>
-</body>
+<!-- 🔔 Notificación superior (encima del topbar) -->
+<script>
+  const showTopbarAlert = false; // 🔁 cámbialo a false para ocultarla
+
+  if (showTopbarAlert) {
+    const alertBar = document.createElement("div");
+    alertBar.id = "topbar-alert";
+    alertBar.innerHTML = `
+      <div id="alert-content">
+        ⚙️ Problemas técnicos detectados — Algunos servicios pueden no funcionar correctamente.
+      </div>
+      <button id="alert-close">Cerrar</button>
+    `;
+    document.body.appendChild(alertBar);
+
+    // Permite cerrar la alerta
+    document.getElementById("alert-close").addEventListener("click", () => {
+      alertBar.remove();
+    });
+  }
+</script>
+
+<!-- ⚠️ Notificación de servidores abajo del todo -->
+<script>
+  const showNotification = true; // 🔁 cámbialo a false para ocultarla
+
+  if (showNotification) {
+    const notification = document.createElement("div");
+    notification.id = "notification";
+    notification.innerHTML = `
+      <div id="notif-content">
+        <strong>⚠️ Pixmap Server are down</strong><br>
+        <span>Pixmap's servers are either down or not working; no new information is available until they are back online. If they are now operational: https://t.me/DEzeitung, Last Check: 0:16</span>
+      </div>
+      <button id="notif-close">Close</button>
+    `;
+    document.body.appendChild(notification);
+
+    // Cerrar la notificación al pulsar "Aceptar"
+    document.getElementById("notif-close").addEventListener("click", () => {
+      notification.remove();
+    });
+  }
+</script>
+
+<!-- 💅 Estilos compartidos -->
+<style>
+  /* 🔶 Alerta superior (encima del topbar) */
+  #topbar-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 165, 0, 0.95);
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    font-family: sans-serif;
+    pointer-events: auto;
+  }
+
+  #alert-close {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+
+  #alert-close:hover {
+    background: #333;
+  }
+
+  /* 🔻 Notificación de servidores abajo */
+  #notification {
+    position: fixed;
+    top: 60px; /* para que quede debajo del topbar o alerta */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 50, 50, 0.95);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    font-family: sans-serif;
+  }
+
+  #notif-close {
+    margin-top: 8px;
+    background: #fff;
+    color: #d00;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+
+  #notif-close:hover {
+    background: #f5f5f5;
+  }
+
+  #notif-content {
+    pointer-events: none; /* El texto no bloquea clics del mapa */
+  }
+</style>
 </html>
 

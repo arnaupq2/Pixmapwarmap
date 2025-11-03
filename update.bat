@@ -4,7 +4,7 @@ echo ============================
 echo Subiendo cambios a GitHub...
 echo ============================
 git add .
-git commit -m "force update"
+git push origin main --force
 git push origin main
 echo ----------------------------
 echo ✅ Actualización completada.
