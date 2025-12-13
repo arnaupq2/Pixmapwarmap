@@ -1,0 +1,2873 @@
+{
+  "history": {
+    "2025-12-13": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": []
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "news",
+              "title": "Explosion in sumy",
+              "desc": "dsfsdf",
+              "imgUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAIVBMVEUAUpP+ywD/0QAAT5RPaoRgcn//zwAATJZdcIBKaIaBgnKJbaV5AAABo0lEQVR4nO3ay23EUAwEwWfJ+80/YDuC0h5EwJC7EiDY51lrxn7bvo5st33o+h9XHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeuEWef8Xh+EOf5GLp+kvU94/W+H8a5v19D10+ytiHHbX7rTB0/yfrgh3+rOFAcKA4UB4oDxYHiQHGgOFAcKA4UB4oDxYHiQHGgOFAcKA4UB4oDxYHiQHGgOFAcKA4UB4oDxYHiQHGgZRe0CYTWpDC24L3EDnlIcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBy4RJwfSbNT+9vP9HkAAAAASUVORK5CYII=",
+              "sourceUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAIVBMVEUAUpP+ywD/0QAAT5RPaoRgcn//zwAATJZdcIBKaIaBgnKJbaV5AAABo0lEQVR4nO3ay23EUAwEwWfJ+80/YDuC0h5EwJC7EiDY51lrxn7bvo5st33o+h9XHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeuEWef8Xh+EOf5GLp+kvU94/W+H8a5v19D10+ytiHHbX7rTB0/yfrgh3+rOFAcKA4UB4oDxYHiQHGgOFAcKA4UB4oDxYHiQHGgOFAcKA4UB4oDxYHiQHGgOFAcKA4UB4oDxYHiQHGgZRe0CYTWpDC24L3EDnlIcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBy4RJwfSbNT+9vP9HkAAAAASUVORK5CYII=",
+              "date": "2025-12-13T16:28:27.453Z"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                24.125977,
+                60.272515
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "news",
+              "title": "bvcgfhh",
+              "desc": "fhgfhgf",
+              "imgUrl": "fhghgfhgf",
+              "sourceUrl": "hfghgfhgf",
+              "date": "2025-12-13T16:34:51.073Z"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                23.137207,
+                60.245264
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "2025-12-12": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": []
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-14": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-15": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "news",
+              "title": "Sweden starts a attack",
+              "desc": "Great attack no joke",
+              "imgUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAIVBMVEUAUpP+ywD/0QAAT5RPaoRgcn//zwAATJZdcIBKaIaBgnKJbaV5AAABo0lEQVR4nO3ay23EUAwEwWfJ+80/YDuC0h5EwJC7EiDY51lrxn7bvo5st33o+h9XHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeuEWef8Xh+EOf5GLp+kvU94/W+H8a5v19D10+ytiHHbX7rTB0/yfrgh3+rOFAcKA4UB4oDxYHiQHGgOFAcKA4UB4oDxYHiQHGgOFAcKA4UB4oDxYHiQHGgOFAcKA4UB4oDxYHiQHGgZRe0CYTWpDC24L3EDnlIcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBy4RJwfSbNT+9vP9HkAAAAASUVORK5CYII=",
+              "sourceUrl": "Discord",
+              "date": "2025-12-13T16:34:20.501Z"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                24.768677,
+                60.25753
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "2025-12-16": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-17": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-18": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-19": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-20": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-21": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-22": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-23": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-24": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-25": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-26": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-27": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-28": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-29": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-30": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2025-12-31": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-01": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-02": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-03": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-04": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-05": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-06": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-07": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-08": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-09": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-10": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-11": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-12": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-13": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-14": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-15": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-16": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-17": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-18": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-19": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-20": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-21": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-22": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-23": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-24": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-25": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-26": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "2026-01-27": {
+      "features": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "#0055ff",
+              "opacity": 0.6,
+              "name": "Sweden",
+              "type": "shape",
+              "flagUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png",
+              "scale": 0.4,
+              "angle": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    24.672546,
+                    60.120987
+                  ],
+                  [
+                    24.927979,
+                    60.389434
+                  ],
+                  [
+                    25.609131,
+                    60.314708
+                  ],
+                  [
+                    25.683289,
+                    60.238448
+                  ],
+                  [
+                    25.276794,
+                    60.219355
+                  ],
+                  [
+                    25.057068,
+                    60.171574
+                  ],
+                  [
+                    24.78241,
+                    60.144239
+                  ],
+                  [
+                    24.672546,
+                    60.120987
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "news": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    }
+  },
+  "meta": {
+    "exportedAt": "2025-12-13T17:57:06.416Z"
+  }
+}
