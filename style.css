@@ -1,0 +1,512 @@
+:root {
+    --sidebar-width: 60px;
+    --sidebar-bg: #ffffff;
+    --card-bg: #ffffff;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --accent: #b91c1c;
+    /* Deep Red */
+    --accent-hover: #991b1b;
+    --bg-map: #f3f4f6;
+    --border-color: #e5e7eb;
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-primary);
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* 1. Left Icon Sidebar */
+#left-sidebar {
+    width: var(--sidebar-width);
+    background: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 2000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav-item {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav-item:hover {
+    background: #f3f4f6;
+    color: var(--text-primary);
+}
+
+.nav-item.active {
+    background: #fee2e2;
+    color: var(--accent);
+}
+
+.nav-item i {
+    font-size: 1.1rem;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+/* ----------------------------------------------------------------------
+   NEWS / UPDATES FEED (DeepState "Updates" Style)
+   ---------------------------------------------------------------------- */
+#news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.news-date-header {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #9ca3af;
+    /* Gray-400 */
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.news-card {
+    background: #f3f4f6;
+    /* Light Gray */
+    border-radius: 12px;
+    padding: 16px;
+    position: relative;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+
+.news-card:hover {
+    background: #e5e7eb;
+}
+
+.news-card.selected {
+    background: #f3f4f6;
+    border: 1px solid #1f2937;
+    /* Dark border for selected */
+}
+
+/* Red Dot Indicator */
+.news-dot {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 8px;
+    height: 8px;
+    background: #ef4444;
+    border-radius: 50%;
+}
+
+.news-body {
+    font-size: 0.95rem;
+    color: #1f2937;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.news-body a {
+    color: #111827;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.news-time {
+    font-size: 0.85rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* Hide old media styles if not adapting nicely, or keep valid */
+.news-media {
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.news-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 2. Floating Header Card */
+#floating-header {
+    position: absolute;
+    top: 20px;
+    left: calc(var(--sidebar-width) + 20px);
+    background: var(--card-bg);
+    padding: 8px 16px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 56px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    color: #111;
+    border-right: 1px solid var(--border-color);
+    padding-right: 20px;
+}
+
+.header-logo i {
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    line-height: 0.9;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-secondary);
+    background: #f9fafb;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.header-search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 0.9rem;
+    width: 150px;
+}
+
+.header-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.date-arrow,
+.calendar-icon {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    color: var(--text-secondary);
+}
+
+.date-arrow:hover {
+    background: #f3f4f6;
+    color: var(--text-primary);
+}
+
+.btn-delete-news {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    /* Left of the dot */
+    background: transparent;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 4px;
+    border-radius: 4px;
+    opacity: 0;
+    /* Hidden by default */
+    transition: all 0.2s;
+}
+
+.news-card:hover .btn-delete-news {
+    opacity: 1;
+    /* Show on hover */
+}
+
+.btn-delete-news:hover {
+    color: #ef4444;
+    background: #fee2e2;
+}
+
+/* 3. Map */
+#map {
+    flex: 1;
+    height: 100%;
+    z-index: 1;
+    background: #eef0f3;
+    /* Placeholder color before tiles load */
+}
+
+/* Tool Panel (Right or Floating) */
+#tool-panel {
+    position: absolute;
+    top: 90px;
+    left: calc(var(--sidebar-width) + 20px);
+    width: 280px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    border: 1px solid var(--border-color);
+    padding: 16px;
+}
+
+#tool-panel.hidden {
+    display: none;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.panel-header button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-tool {
+    flex: 1;
+    padding: 8px;
+    background: #f3f4f6;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-tool:hover {
+    background: #e5e7eb;
+}
+
+.btn-danger {
+    width: 100%;
+    padding: 8px;
+    background: #fee2e2;
+    color: #ef4444;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.prop-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 15px 0;
+}
+
+/* Leaflet Customization for Light Theme */
+.leaflet-container {
+    background: #f5f5f5 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.leaflet-control-zoom {
+    border: none !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+.leaflet-control-zoom a {
+    background: white !important;
+    color: #333 !important;
+    border-bottom: 1px solid #eee !important;
+}
+
+/* Hide Drawing Toolbar because we made custom buttons */
+.leaflet-draw {
+    display: none !important;
+}
+
+/* News Panel (Slide out from left, next to sidebar) */
+.sidebar-panel {
+    position: absolute;
+    top: 0;
+    left: var(--sidebar-width);
+    height: 100%;
+    width: 350px;
+    background: var(--card-bg);
+    border-right: 1px solid var(--border-color);
+    z-index: 1500;
+    padding: 20px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-panel.hidden {
+    display: none;
+}
+
+.news-card {
+    background: #f9fafb;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.news-card h4 {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.news-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.news-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.news-date {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    text-align: right;
+}
+
+/* Custom Image Control Box */
+.image-control-rect {
+    stroke: #f59e0b;
+    stroke-width: 2;
+    stroke-dasharray: 5, 5;
+    fill: transparent;
+    animation: dash 30s linear infinite;
+}
+
+.prop-row input[type="text"] {
+    width: 60%;
+    padding: 4px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+/* Polygon Tooltip Styling */
+.flag-tooltip {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flag-tooltip img {
+    height: 20px;
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto 4px auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.flag-tooltip span {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #111;
+}
+
+/* Toast Notification */
+#toast-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3000;
+    pointer-events: none;
+}
+
+.toast {
+    background: rgba(30, 30, 30, 0.9);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ensure buttons are clickable even if icons fail to load */
+.btn-tool,
+.nav-item {
+    min-width: 30px;
+    min-height: 30px;
+}

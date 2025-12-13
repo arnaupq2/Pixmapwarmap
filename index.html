@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepPixmap Map</title>
+
+    <!-- Leaflet (Local) -->
+    <link rel="stylesheet" href="libs/leaflet.css" />
+    <link rel="stylesheet" href="libs/leaflet.draw.css" />
+    <script src="libs/leaflet.js"></script>
+    <script src="libs/leaflet.draw.js"></script>
+    <script src="libs/html2canvas.min.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- 1. LEFT SIDEBAR -->
+        <nav id="left-sidebar">
+            <div class="nav-item active" id="nav-map" title="Map">
+                <i class="fa-solid fa-map"></i>
+            </div>
+            <div class="nav-item" id="nav-news" title="News">
+                <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <div class="nav-item spacer"></div>
+            <div class="nav-item" id="tool-draw" title="Draw">
+                <i class="fa-solid fa-pencil"></i>
+            </div>
+            <div class="nav-item" id="action-save" title="Save Project">
+                <i class="fa-solid fa-floppy-disk"></i>
+            </div>
+            <div class="nav-item" id="action-load" title="Load Project">
+                <i class="fa-solid fa-folder-open"></i>
+            </div>
+            <div class="nav-item" id="action-export" title="Screenshot">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+        </nav>
+
+        <!-- 2. FLOATING HEADER (DeepState Style) -->
+        <div id="floating-header">
+            <div class="header-logo">
+                <i class="fa-solid fa-chess-knight"></i>
+                <div class="logo-text">
+                    <span>DEEP</span>
+                    <span>PIXMAP</span>
+                </div>
+            </div>
+            <div class="header-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input" placeholder="Search location...">
+            </div>
+            <div class="header-date">
+                <button id="date-play" class="date-arrow" title="Play History"><i class="fa-solid fa-play"></i></button>
+                <div style="width:10px;"></div>
+                <button id="date-prev" class="date-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+                <div id="date-display" class="current-date">--.--.----</div>
+                <button id="date-next" class="date-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+                <button id="date-picker-btn" class="calendar-icon"><i class="fa-regular fa-calendar"></i></button>
+                <input type="date" id="date-picker-input" style="visibility:hidden; width:1px; position:absolute;">
+            </div>
+        </div>
+
+        <!-- 3. TOOLS PANEL (Contextual) -->
+        <div id="tool-panel" class="hidden">
+            <div class="panel-header">
+                <h4>Tactical Tools</h4>
+                <button id="close-tool-panel"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="panel-content">
+                <div class="tool-group" id="group-zones">
+                    <label>Zones</label>
+                    <div class="btn-group">
+                        <button id="draw-polygon" class="btn-tool" title="Area"><i class="fa-solid fa-draw-polygon"></i>
+                            Area</button>
+                        <button id="draw-line" class="btn-tool" title="Front Line"><i
+                                class="fa-solid fa-wave-square"></i> Front</button>
+                    </div>
+                </div>
+                <div class="tool-group" id="group-tactical">
+                    <label>Tactical</label>
+                    <div class="btn-group">
+                        <button id="draw-unit" class="btn-tool" title="Unit"><i class="fa-solid fa-diamond"></i>
+                            Unit</button>
+                        <button id="draw-arrow-icon" class="btn-tool" title="Move Arrow"><i
+                                class="fa-solid fa-location-arrow"></i> Move</button>
+                        <button id="draw-image" class="btn-tool" title="Place Image"><i class="fa-solid fa-image"></i>
+                            Image</button>
+                    </div>
+                </div>
+
+                <!-- Planning & Utils -->
+                <div class="tool-group">
+                    <label>Planning / Local</label>
+                    <div class="btn-group">
+                        <button id="draw-ruler" class="btn-tool" title="Ruler (Measure)"><i
+                                class="fa-solid fa-ruler"></i> Ruler</button>
+                        <button id="draw-plan" class="btn-tool" title="Plan Zone"><i class="fa-solid fa-pen-ruler"></i>
+                            Plan</button>
+                    </div>
+                </div>
+
+                <!-- Properties -->
+                <div id="selection-props" class="hidden">
+                    <hr>
+                    <label>Selected Properties</label>
+                    <div class="prop-row">
+                        <span>Name</span>
+                        <input type="text" id="prop-name">
+                    </div>
+                    <div class="prop-row">
+                        <span>Image / Flag</span>
+                        <div style="display:flex; gap:5px; width:60%;">
+                            <input type="text" id="prop-flag" placeholder="URL..." style="width:100%;">
+                            <button id="btn-upload-image" title="Upload Local" style="width:30px; cursor:pointer;"><i
+                                    class="fa-solid fa-upload"></i></button>
+                        </div>
+                    </div>
+                    <div class="prop-row">
+                        <span>Color</span>
+                        <input type="color" id="prop-color">
+                    </div>
+                    <div class="prop-row">
+                        <span>Opacity</span>
+                        <input type="range" id="prop-opacity" min="0" max="1" step="0.1">
+                    </div>
+
+                    <!-- NEW: Rotation & Scale -->
+                    <div id="group-rotation" class="hidden">
+                        <div class="prop-row">
+                            <span>Rotation (<span id="val-rotation">0</span>°)</span>
+                            <input type="range" id="prop-rotation" min="0" max="360" step="15" value="0">
+                        </div>
+                        <div class="prop-row">
+                            <span>Size / Scale</span>
+                            <input type="range" id="prop-scale" min="0.2" max="5" step="0.1" value="1">
+                        </div>
+                    </div>
+
+                    <button id="btn-delete" class="btn-danger">Delete Item</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. NEWS PANEL -->
+        <div id="news-panel" class="sidebar-panel hidden">
+            <div class="panel-header">
+                <h3>Updates</h3>
+                <button id="close-news-panel"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <button id="btn-add-news-mode" class="btn-tool" style="width:100%; margin-bottom:15px;">
+                <i class="fa-solid fa-plus"></i> Add News
+            </button>
+
+            <!-- News Creation Form -->
+            <div id="news-form" class="hidden">
+                <input type="text" id="news-title" placeholder="Title (e.g. Explosion in Sumy)">
+                <textarea id="news-desc" placeholder="Details..."></textarea>
+                <input type="text" id="news-img" placeholder="Image URL (http...)">
+                <input type="text" id="news-source" placeholder="Source Link">
+                <div class="btn-group">
+                    <button id="btn-submit-news" class="btn-tool" style="background:#10b981; color:white;">Post</button>
+                    <button id="btn-cancel-news" class="btn-tool">Cancel</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- News Feed Container -->
+            <div id="news-list">
+                <!-- News Cards will be injected here -->
+            </div>
+        </div>
+
+        <div id="map"></div>
+        <div id="toast-container"></div>
+
+        <input type="file" id="file-input-json" accept=".json" style="display:none;">
+        <input type="file" id="file-input-image" accept="image/*" style="display:none;">
+        <input type="file" id="input-upload-image" accept="image/*" style="display:none;"> <!-- NEW for Prop Upload -->
+
+    </div>
+    <script src="libs/leaflet-draw.js"></script> <!-- Ensure Leaflet Draw is loaded -->
+    <script src="db.js"></script> <!-- Data -->
+    <script src="script.js"></script>
+</body>
+
+</html>
